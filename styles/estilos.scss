@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU:wght@100..400&display=swap');
+
+// Comienzan las variables
+
+$color1:#ED9455;
+$color2:#FFBF78;
+$color3:#FFEC9E;
+$color4:#FFFBDA;
+$color-texto:#212529;
+$letra1:"Open Sans", sans-serif;
+$letra2:"Playwrite CU";
+$gal1: url(../images/galeria/galeria1.jpg);
+$gal2: url(../images/galeria/galeria2.jpg);
+$gal3: url(../images/galeria/galeria3.jpg);
+$gal4: url(../images/galeria/galeria4.jpg);
+$gal5: url(../images/galeria/galeria5.jpg);
+$gal6: url(../images/galeria/galeria6.jpg);
+$gal7: url(../images/galeria/galeria7.jpg);
+$gal8: url(../images/galeria/galeria8.jpg);
+$gal9: url(../images/galeria/galeria9.jpg);
+$gal10: url(../images/galeria/galeria10.jpg);
+$gal11: url(../images/galeria/galeria11.jpg);
+$gal12: url(../images/galeria/galeria12.jpg);
+$fondo-base: url(../images/Fondo.jpg);
+$fondo-video: url(../images/FondoVideo.jpg);
+
+// Terminan las variables
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $letra1
+}
+
+// Comienza el header
+
+.navbar{
+    background-color: $color1;
+}
+.navbar-brand{
+    font-family: $letra2;
+    color: $color1;
+    text-shadow: 0 0 5px $color3;
+    font-size: 25px;
+    text-decoration: underline 3px $color1;
+}
+.navbar-brand::after{
+    content: "🍞";
+}
+nav div span{
+    text-decoration: none;
+}
+.container-fluid{
+    background-color: #ed9455;
+    background-image: linear-gradient(180deg, #ed9455 0%, #ffbf78 25%, #ffec9e 50%, #ffbf78 75%, #ed9455 100%);
+}
+.flex{
+    display: flex;
+    justify-content: end;
+}
+.nav-link{
+    background-color: $color3;
+    color: $color1;
+    margin: 0px 5px;
+    border: solid $color1;
+    border-radius: 7px;
+    text-align: center;
+    transition: 1s;
+    padding: 3px 10px !important;
+}
+.nav-link:hover{
+    background-color: $color1;
+    transform: scale(1.2);
+}
+
+// Termina el header
+// Comienza el main
+
+.bcg1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: $fondo-base;
+    height: auto;
+    width: 100%;
+}
+.call{
+    text-align: center;
+    width: 70%;
+    background-color: rgba(255, 192, 120, 0.65);
+    padding: 15px;
+    margin: 25px 0px;
+    border: solid $color1;
+    border-radius: 10px;
+}
+.intro{
+    margin-bottom: 10px;
+}
+.hr{
+    border-color: $color1;
+    width: 100%;
+    margin: 0 auto;
+}
+.hr1{
+    width: 50%;
+    margin: 0px auto 8px;
+    border-top: solid 1px $color1;
+    border-bottom: solid 1px black;
+    opacity: 1;
+}
+.h1{
+text-transform: uppercase;
+font-size: 35px;
+}
+.h2{
+    font-size: 32px;
+    text-decoration: underline $color-texto;
+    font-style: italic;
+    padding: 15px;
+    background-color: rgba(255, 192, 120, 0.65);
+    width: 30%;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 10px;
+    border: solid $color1;
+}
+.h2-contacto{
+    text-align: center;
+    background-color: rgba(255, 192, 120, 0.65);
+    width: 70%;
+    border-radius: 10px;
+    border: solid $color1;
+    font-size: 32px;
+    padding: 16px;
+    margin: 20px 0px;
+    font-size: 24px;
+}
+.h3{
+    font-family: $letra2;
+}
+.letra-logo{
+    color: $color-texto;
+    font-family: $letra2;
+}
+.bcg2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: $fondo-video;
+    height: 1000px;
+    background-position: center;
+    background-size: cover;
+    border-top: solid 3px $color1;
+    border-bottom: solid 3px $color1;
+}
+.sacar-margin{
+    margin-bottom: 0px;
+}
+.video{
+    width: 85%;
+    height: auto;
+    margin: 10px;
+}
+section div div div{
+    display: flex;
+    justify-content: center;
+}
+.bcg4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color3;
+    padding-top: 18px;
+}
+.bcg5{
+    background-image: $fondo-video;
+    background-size: cover;
+}
+.galeria{
+    background-color: $color3;
+    width: 100%;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 230px);
+    grid-gap: 15px;
+}
+.img{
+    border: solid $color1;
+    border-radius: 7px;
+    background-position: center;
+    background-size: cover;
+}
+.img1{
+    background-image: $gal1;
+}
+
+.img2{
+    background-image: $gal2;
+}
+.img3{
+    background-image: $gal3;
+}
+.img4{
+    background-image: $gal4;
+}
+.img5{
+    background-image: $gal5;
+}
+.img6{
+    background-image: $gal6;
+}
+.img7{
+    background-image: $gal7;
+}
+.img8{
+    background-image: $gal8;
+}
+.img9{
+    background-image: $gal9;
+}
+.img10{
+    background-image: $gal10;
+}
+.img11{
+    background-image: $gal11;
+}
+.img12{
+    background-image: $gal12;
+}
+video{
+    border: solid $color1;
+    border-radius: 10px;
+}
+form{
+    padding: 20px;
+    width: 70%;
+    color: $color-texto;
+}
+label{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+input, textarea{
+    width: 100%;
+}
+input[type = "submit"]{
+    background-color: $color1;
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    background-image: linear-gradient(to right, $color1 0%, $color2  51%, $color3  100%);
+    transition: 0.5s;
+    text-align: center;
+    background-size: 200% auto;
+    margin-top: 10px;
+}
+
+input[type = "submit"]:hover{
+    background-position: right center;
+    color: $color1;
+    text-decoration: none;
+    text-shadow: 0 0 1px white;
+}
+
+input[type = "text"]{
+    height: 35px;
+    text-align: center;
+    border: solid 3px $color1;
+    background-color: $color3;
+}
+input[type = "number"]{
+    height: 35px;
+    text-align: center;
+    border: solid 3px $color1;
+    background-color: $color3;
+}
+input[type = "email"]{
+    height: 35px;
+    text-align: center;
+    border: solid 3px $color1;
+    background-color: $color3;
+}
+textarea{
+    text-align: center;
+    border: solid 3px $color1;
+    background-color: $color3;
+}
+input:focus{
+    border: solid 3px $color1;
+    color: $color1;
+    text-shadow: 0 0 3px $color4;
+    font-weight: bold;
+}
+textarea:focus{
+    border: solid 3px $color1;
+    color: $color1;
+    text-shadow: 0 0 3px $color4;
+    font-weight: bold;
+}
+.mapa-contenedor{
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color1;
+    background-image: linear-gradient(135deg, $color1 0%, $color2 25%, $color3 50%, $color2 75%, $color1 100%);
+}
+.mapa-contenedor div{
+    width: 85%;
+    border: solid 5px $color1;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+// Termina el main
+// Comienza el footer
+
+.bcg3{
+    width: 100%;
+    background-image: $fondo-base;
+    height: 150px;
+}
+.espacio{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-bottom: solid 3px $color1;
+}
+.contacto{
+    display: inline-block;
+    list-style: none;
+    padding: 15px 35px;
+    background-color: $color1;
+    background-image: linear-gradient(135deg, $color1 0%, $color2 25%, $color3 50%, $color2 75%, $color1 100%);
+    border: solid $color1;
+    border-radius: 10px;
+}
+.li-span{
+    font-family: $letra1;
+}
+footer{
+    height: auto;
+    width: 100%;
+    background-color: $color4;
+    text-align: center;
+    font-weight: bold;
+}
+footer .derechos{
+    font-family: $letra1;
+}
+.redes{
+    letter-spacing: 10px;
+    border-top: solid 3px $color1;
+}
+.redes a{
+    text-decoration: none;
+    color: $color1;
+    font-size: 50px;
+}
+.redes a:hover{
+    color: $color3;
+}
+.redes a i:hover{
+    padding: 10px 0px 10px 10px;
+    background-color: $color1;
+    border-radius: 50%;
+}
+
+// Termina el footer
+// Comienzan las medias queries
+
+@media only screen and (max-width: 1439px){
+    .galeria{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 230px);
+    }
+    .call{
+        width: 75%;
+    }
+    .h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .h2{
+        font-size: 30px;
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 1320px){
+    .bcg3{
+        height: 200px;
+    }
+    .espacio{
+        flex-wrap: wrap;
+        height: 200px;
+    }
+    #contacto4{
+    width: 80%;
+    text-align: center;
+    }
+    .h1{
+        font-size: 28px;
+    }
+    .h2{
+        font-size: 26px;
+    }
+    .h3{
+        font-size: 24px;
+    }
+    .h2-contacto{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .bcg3{
+        height: 260px;
+    }
+    .espacio{
+        height: 260px;
+    }
+    #contacto1{
+        width: 35%;
+        text-align: center;
+    }
+    #contacto2{
+        width: 35%;
+        text-align: center;
+    }
+    #contacto3{
+        width: 80%;
+        text-align: center;
+    }
+    .bcg2{
+        height: 740px;
+    }
+    .navbar-brand{
+        font-size: 22px;
+    }
+    .nav-link{
+        font-size: 15px;
+    }
+    .h1{
+        font-size: 26px;
+    }
+    .h2{
+        font-size: 24px;
+    }
+    .h3{
+        font-size: 21px;
+    }
+    .h2-contacto{
+        font-size: 20px;
+    }
+    label{
+        font-size: 18px;
+    }
+    input{
+        font-size: 18px;
+    }
+    textarea{
+        font-size: 18px;
+    }
+    iframe{
+        height: 260px;
+    }
+    .mapa-contenedor{
+        height: 400px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .galeria{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 230px);
+    }
+    .call{
+        width: 87%;
+    }
+    .h1{
+        font-size: 22px;
+    }
+    .h3{
+        font-size: 17px;
+    }
+    .h2{
+        font-size: 22px;
+        width: 65%;
+    }
+    .bcg3{
+        height: auto;
+    }
+    .espacio{
+        height: 280px;
+    }
+    #contacto1{
+        width: 80%;
+        text-align: center;
+    }
+    #contacto2{
+        width: 80%;
+        text-align: center;
+    }
+    .contacto{
+        padding: 10px;
+        font-size: 14px;
+    }
+    footer p{
+        font-size: 14px;
+    }
+    .redes a{
+        font-size: 42px;
+    }
+    .bcg2{
+        height: 600px;
+    }
+    .derechos{
+        font-size: 14px;
+    }
+    .intro{
+        font-size: 14px;
+    }
+    .navbar-brand{
+        font-size: 18px;
+    }
+    .nav-link{
+        font-size: 14px;
+        margin: 8px 0px 0px;
+    }
+    .flex{
+        display: inline-block;
+    }
+    .h2-contacto{
+        font-size: 16px;
+    }
+    label{
+        font-size: 16px;
+    }
+    input{
+        font-size: 16px;
+    }
+    textarea{
+        font-size: 16px;
+    }
+    input[type= "submit"]{
+        width: 149px;
+    }
+    iframe{
+        height: 230px;
+    }
+    .mapa-contenedor{
+        height: 340px;
+    }
+}
+@media only screen and (max-width: 479px){
+    .galeria{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 230px);
+    }
+    .call{
+        width: 90%;
+    }
+    .h1{
+        font-size: 20px;
+    }
+    .h3{
+        font-size: 16px;
+    }
+    .h2{
+        font-size: 20px;
+        width: 65%;
+    }
+    .contacto{
+        font-size: 12px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    .redes a{
+        font-size: 34px;
+    }
+    .bcg2{
+        height: 400px;
+    }
+    .footer-div{
+        display: block;
+    }
+    .derechos{
+        display: block;
+        font-size: 12px;
+    }
+    .intro{
+        font-size: 12px;
+    }
+    .h2-contacto{
+        font-size: 14px;
+    }
+    label{
+        font-size: 14px;
+    }
+    input{
+        font-size: 14px;
+    }
+    textarea{
+        font-size: 14px;
+    }
+    iframe{
+        height: 180px;
+    }
+    .mapa-contenedor{
+        height: 270px;
+    }
+}
+@media only screen and (max-width: 410px){
+    .li-span{
+        display: block;
+    }
+    iframe{
+        height: 150px;
+    }
+    .mapa-contenedor{
+        height: 220px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .bcg2{
+        height: 320px;
+    }
+    .contacto{
+        width: 85%;
+        text-align: center;
+    }
+}
+
+// Terminan las media queries

@@ -1,0 +1,5 @@
+1- Quité los metadatos de las imagenes que utilicé
+2- Agregué descripciones a las páginas web
+3- Agregué etiquetas metas con palabras claves
+4- Quite lineas vacias de código basura
+5- Comprimi las imagenes para que tengan menor peso
