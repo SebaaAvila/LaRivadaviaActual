@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/estilos.css">
     <meta name="description" content="Descubre nuestras promociones exclusivas en panes, pasteles y repostería. Aprovecha descuentos y ofertas especiales en productos frescos y de alta calidad. Visítanos y disfruta de nuestras delicias a precios increíbles. ¡No te pierdas nuestras ofertas diarias!">
     <meta name="keywords" content="panadería, descuentos, ofertas, panes, descuentos exclusivos, ofertas en productos de panadería, ofertas diarias, panadería ofertas, descuentos en pan, pan por mayor">
@@ -40,7 +41,130 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main id="fondo">
+        <section class="bcg1" class="sacar-margin">
+            <div class="call">
+                <h1 class="h1">Promociones</h1>
+                <hr class="hr1">
+                <h3 class="h3">¡Horneamos con amor para ti y tu familia!</h3>
+            </div>
+        </section>
+        <section class="promocion-fondo">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/promocion/Promocion1.jpg" class="d-block w-100" alt="Imagen de la panadería">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/promocion/Promocion2.jpg" class="d-block w-100" alt="Imagen de la panadería">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/promocion/Promocion3.jpg" class="d-block w-100" alt="Imagen de la panadería">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <div class="promocion">
+            <ul class="cards">
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_price">%20 off</div>
+                        <div class="card_image"><img src="../images/promos/PromoPan.jpg" alt="Panes en promocion"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Lunes de Panes</h2>
+                            <div class="card_text">
+                                <p>¡Atención amantes del buen pan! 🥖✨</p>
+                                <p>¿Buscas calidad, sabor y frescura al mejor precio? ¡Hoy es tu día de suerte! 🥐 Aprovecha nuestras OFERTAS ESPECIALES en panes recién horneados. Desde baguettes crujientes hasta suaves panecillos de mantequilla, tenemos el pan perfecto para cada ocasión.</p>
+                                <p>Ven y llévate:
+                                    <ul>
+                                        <li>Panes artesanales con hasta 20% de descuento los dias lunes</li>
+                                        <li>Compra 2 y llévate 3 por el precio de 2 en nuestra selección de panes dulces</li>
+                                        <li>Pan integral y multigrano a solo $5000</li>
+                                    </ul>
+                                </p>
+                                <p>¡No te quedes sin probar el sabor y frescura que solo nosotros te ofrecemos! Esta oferta es por tiempo limitado. 💥 ¡Te esperamos para que llenes tu mesa de sabor!</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_price">%20 off</div>
+                        <div class="card_image"><img src="../images/promos/PromoTorta.jpg" alt="Tortas en promocion"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Martes de Tortas</h2>
+                            <div class="card_text">
+                                <p>¡Deliciosas tentaciones a precios irresistibles! 🍰✨</p>
+                                <p>¿Quién puede resistirse a una torta fresca y esponjosa? ¡Te traemos una oferta especial para que endulces tus momentos al mejor precio! 🎉 Aprovecha nuestro descuento en tortas de todos los sabores, desde el clásico chocolate hasta nuestras exquisitas opciones de frutas frescas y cremoso cheesecake.</p>
+                                <p>✨ Promociones Especiales:
+                                    <ul>
+                                        <li>10% de descuento en todas nuestras tortas grandes 🎂</li>
+                                        <li>Compra una torta mediana y llévate un cupcake de regalo 🧁</li>
+                                        <li>¡Hasta 20% de descuento en tortas seleccionadas!</li>
+                                    </ul>
+                                </p>
+                                <p>Sorprende a tus seres queridos o date un gusto único sin preocuparte por el precio. ¡Ven los martes y endulza tu día con una de nuestras tortas!</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_price">%15 off</div>
+                        <div class="card_image"><img src="../images/promos/PromoSandwich.jpg" alt="Medialunas en promocion"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Jueves de Sándwichs</h2>
+                            <div class="card_text">
+                                <p>¡Hoy jueves, es el día perfecto para disfrutar de un sándwich fresco y delicioso! 🥪✨</p>
+                                <p>¿Buscas una opción rápida, rica y a buen precio? Tenemos una oferta especial en nuestros sándwiches artesanales, hechos con ingredientes frescos y pan recién horneado. Desde el clásico jamón y queso hasta opciones con pollo, vegetales frescos y más.</p>
+                                <p>🌟 Promociones Especiales:
+                                    <ul>
+                                        <li>Llévate 2 sándwiches con 10% de descuento</li>
+                                        <li>Descuento del 15% en la compra de 4 o más sándwiches</li>
+                                        <li>Combo de sándwich + bebida a solo $1500</li>
+                                    </ul>
+                                </p>
+                                <p>¡No te quedes sin probarlos y llénate de sabor!</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item" id="item_fig">
+                    <div class="card">
+                        <div class="card_price">%30 off</div>
+                        <div class="card_image"><img src="../images/promos/PromoMedialuna.jpg" alt="Medialunas en promocion"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Viernes de Medialunas</h2>
+                            <div class="card_text">
+                                <p>¡Las medialunas más frescas y deliciosas te esperan! 🥐💫</p>
+                                <p>¿Te imaginas el aroma y la textura de una medialuna recién horneada? Los viernes tenemos una oferta especial para que te lleves el sabor irresistible de nuestras medialunas a un precio que no podrás dejar pasar.</p>
+                                <p>🎉 Promociones imperdibles:
+                                    <ul>
+                                        <li>¡Llévate 14 medialunas por el precio de 1 docena!</li>
+                                        <li>Descuento del 30% en la compra de 2 docenas de medialunas</li>
+                                        <li>Combo café + 2 medialunas a solo $1200</li>
+                                    </ul>
+                                </p>
+                                <p>Disfruta de su sabor suave y mantecoso, perfecto para el desayuno, la merienda o ese momento de antojo. ¡Acércate y llévate nuestras medialunas en oferta!</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <section class="bcg3">
             <ul class="espacio">
                 <li class="contacto">
@@ -84,5 +208,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

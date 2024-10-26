@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU:wght@100..400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -334,6 +335,156 @@ textarea:focus {
   padding: 0px;
 }
 
+.nosotros-img {
+  width: 100%;
+  height: auto;
+}
+
+.nosotros-h2 {
+  font-size: 32px;
+  -webkit-text-decoration: underline #212529;
+          text-decoration: underline #212529;
+  font-style: italic;
+  padding: 15px;
+  background-color: rgba(255, 192, 120, 0.65);
+  width: 70%;
+  height: 75px;
+  text-align: center;
+  margin: 30px auto;
+  border-radius: 10px;
+  border: solid #ED9455;
+}
+
+.nosotros-p {
+  height: calc(100% - 135px);
+  text-align: center;
+  font-size: 20px;
+  width: 85%;
+}
+
+.texto-span {
+  font-family: "Playwrite CU";
+}
+
+.fondo-texto {
+  height: 300px;
+}
+
+.promocion-fondo {
+  padding: 100px;
+  background: rgb(255, 236, 158);
+  background: radial-gradient(circle, rgb(255, 236, 158) 15%, rgb(237, 148, 85) 80%);
+}
+
+.promocion {
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card_image {
+  max-height: 250px;
+  margin-top: -24px;
+}
+.card_image img {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card_image:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  top: -100px;
+  background: linear-gradient(0deg, #091014 10%, rgba(0, 0, 0, 0) 100%);
+}
+
+.card {
+  background-color: #091014;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  z-index: 1;
+  display: block;
+}
+
+.card_title {
+  font-family: "Lobster", cursive;
+  font-size: 58px;
+  line-height: 72px;
+  margin-top: -50px;
+  margin-bottom: 24px;
+  text-shadow: black 1px 0 15px;
+  color: white;
+}
+
+.card_text {
+  color: #DDDACB;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+}
+.card_text p {
+  max-width: 700px;
+}
+
+.card_price {
+  position: relative;
+  top: 10px;
+  right: 16px;
+  text-align: right;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  height: 24px;
+  font-size: 36px;
+  font-weight: 400;
+  text-shadow: black 3px 0px 6px;
+}
+
+#item_fig .card:after {
+  content: "¡Caliente!";
+  font-family: "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.788);
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: block;
+  width: 15ch;
+  height: 1.5em;
+  padding: 0.2em 0.4em;
+  position: relative;
+  bottom: calc(100% - 2.5em);
+  left: 1em;
+  text-shadow: #212529;
+}
+
+#fondo {
+  background: rgb(255, 236, 158);
+  background: radial-gradient(circle, rgb(255, 236, 158) 15%, rgb(237, 148, 85) 80%);
+}
+
 .bcg3 {
   width: 100%;
   background-image: url(../images/Fondo.jpg);
@@ -441,6 +592,16 @@ footer .derechos {
   .h2-contacto {
     font-size: 22px;
   }
+  .nosotros-h2 {
+    font-size: 26px;
+    margin: 15px auto;
+    padding: 10px 15px;
+    height: 56px;
+  }
+  .nosotros-p {
+    font-size: 16px;
+    height: calc(100% - 86px);
+  }
 }
 @media only screen and (max-width: 1000px) {
   .bcg3 {
@@ -496,6 +657,15 @@ footer .derechos {
   }
   .mapa-contenedor {
     height: 400px;
+  }
+  .nosotros-h2 {
+    margin-top: 60px;
+  }
+  .nosotros-p {
+    padding-bottom: 60px;
+  }
+  .promocion-fondo {
+    padding: 50px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -579,6 +749,9 @@ footer .derechos {
   }
   .mapa-contenedor {
     height: 340px;
+  }
+  .promocion-fondo {
+    padding: 20px;
   }
 }
 @media only screen and (max-width: 479px) {
